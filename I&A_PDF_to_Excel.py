@@ -12,7 +12,7 @@ The triple quotes are also comments. But I will mainly use this to document sepe
 These are the base variables that are initialized first. They are the external files that are used.
 """
 #This is my own file path. Will be different on different devices. Change the paths to accomodate for your own device.
-path = "C:\\Users\\DyJo\\OneDrive - Government of Ontario\\Documents\\Visual Studio Code\\Python\\I&A PDF to Excel" #Base Path
+path = "C:\\Users\\*************************************\\Documents\\Visual Studio Code\\Python\\I&A PDF to Excel" #Base Path
 excelFile = path + "\\Portal Applications Coded (1) (For Coding Purposes).xlsx" #Path of the excel file.
 pdfPath = path + "\\Touch_Point_re_Scraping_PDFs" #Path where every PDF is located
 workBook = openpyxl.load_workbook(excelFile) #workBook is the variable that holds the excel file.
