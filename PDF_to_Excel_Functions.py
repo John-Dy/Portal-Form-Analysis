@@ -32,15 +32,16 @@ def ConvertPDFtoText(pathPDF, inputPDF, path): #Parameters are the path of the P
 
 #This function is meant to cut out specific lines that aren't needed for populating the excel sheet. This significantly
 #helps with the excel populating process.
+#UPDATE: THESE LINES ARE BLANK BECAUSE THEY CONTAIN INFORMATION THAT ARE PROBABLY CONFIDENTIAL.
 def isCertainLines(line): #Parameter is the current line in the text document (line)
-    if line.lstrip().rstrip().replace(" ", "").lower() == "customdatarequestform/formulairededemandededonnéespersonnalisées" or \
-    line.lstrip().rstrip().replace(" ", "").lower() == "datarequestdetails/détailssurlademandededonnées" or \
-    line.lstrip().rstrip().replace(" ", "").lower() == "specifyadaterangeforthedateextract/précisezuneplagededatespourl'extractiondesdonnées" or \
-    line.lstrip().rstrip().replace(" ", "").lower() == "requestordetails/détailssurledemandeur" or \
-    line.lstrip().rstrip().replace(" ", "").lower() == "4.billingaddress/adressedefacturation" or \
-    line.lstrip().rstrip().replace(" ", "").lower() == "billingaddress/adressedefacturation" or \
-    line.lstrip().rstrip().replace(" ", "").lower() == "4.billinginformation/renseignementssurlafacturation" or \
-    line.lstrip().rstrip().replace(" ", "").lower() == "5.yourdetails/vosrenseignements" or \
+    if line.lstrip().rstrip().replace(" ", "").lower() == "" or \
+    line.lstrip().rstrip().replace(" ", "").lower() == "" or \
+    line.lstrip().rstrip().replace(" ", "").lower() == "" or \
+    line.lstrip().rstrip().replace(" ", "").lower() == "" or \
+    line.lstrip().rstrip().replace(" ", "").lower() == "" or \
+    line.lstrip().rstrip().replace(" ", "").lower() == "" or \
+    line.lstrip().rstrip().replace(" ", "").lower() == "" or \
+    line.lstrip().rstrip().replace(" ", "").lower() == "" or \
     line.isspace():
         return True
     return False
